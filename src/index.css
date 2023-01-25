@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind screens;
+@tailwind utilities;
+
+body{
+  @apply text-dark;
+  @apply text-base;
+  @apply font-IBM
+}
+.flex-center{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.input-group{
+  @apply max-w-[400px];
+  @apply mt-12;
+}
+
+.input-label{
+  @apply text-md;
+  @apply font-semiBold;
+  @apply mb-2;
+  @apply text-light
+}
+
+.input-controller{
+  @apply h-8;
+  @apply p-1;
+  @apply border-b-2;
+  @apply border-light;
+  @apply focus:border-primary;
+  @apply focus:outline-0;
+  @apply font-IBM;
+  @apply w-full;
+  @apply text-primary;
+  @apply font-semiBold;
+}
+.input-error{
+  @apply border-error;
+}
